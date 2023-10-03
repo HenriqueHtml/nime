@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cs2.css">
+    <script src="js2.js"></script>
+</head>
+<body>
+    <h1>Gerador de Números Aleatórios</h1>
+    <p>Clique no botão abaixo para gerar um número aleatório:</p>
+    <div id="random-number"></div>
+    <button id="generate-button" onclick="generateRandomNumber()">Gerar Número</button>
+
+    <script>
+        function generateRandomNumber() {
+            var randomNumber = Math.floor(Math.random() * 100) + 1; // Gera um número aleatório de 1 a 100
+            document.getElementById('random-number').innerHTML = "Número Aleatório: " + randomNumber;
+        }
+    </script>
+</body>
+</html>
